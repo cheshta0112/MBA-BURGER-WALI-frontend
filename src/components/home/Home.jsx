@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Founder from "./Founder";
+import Menu from "./Menu.jsx";
 
 const Home = () => {
   const options = {
@@ -48,6 +49,7 @@ const Home = () => {
       </section>
 
       <Founder />
+      <Menu />
     </>
   );
 };
