@@ -7,26 +7,26 @@ import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess";
-import Login from "./components/login/Login.jsx";
-import Profile from "./components/profile/Profile.jsx";
-import MyOrders from "./components/myOrders/MyOrders.jsx";
-import OrderDetails from "./components/myOrders/OrderDetails.jsx";
-import Dashboard from "./components/admin/Dashboard.jsx";
-import Users from "./components/admin/Users.jsx";
-import Orders from "./components/admin/Orders.jsx";
-import About from "./components/about/About.jsx";
-import NotFound from "./components/layout/NotFound.jsx";
+import Login from "./components/login/Login";
+import Profile from "./components/profile/Profile";
+import MyOrders from "./components/myOrders/MyOrders";
+import OrderDetails from "./components/myOrders/OrderDetails";
+import Dashboard from "./components/admin/Dashboard";
+import Users from "./components/admin/Users";
+import Orders from "./components/admin/Orders";
+import About from "./components/about/About";
+import NotFound from "./components/layout/NotFound";
 
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/founder.scss";
 import "./styles/menu.scss";
-import "./styles/Footer.scss";
+import "./styles/footer.scss";
 import "./styles/contact.scss";
 import "./styles/cart.scss";
 import "./styles/shipping.scss";
-import "./styles/ConfirmOrder.scss";
+import "./styles/confirmOrder.scss";
 import "./styles/paymentsuccess.scss";
 import "./styles/login.scss";
 import "./styles/profile.scss";
@@ -42,11 +42,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
-
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirmorder" element={<ConfirmOrder />} />
-
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
