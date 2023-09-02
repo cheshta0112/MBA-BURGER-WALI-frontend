@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
 import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
+import ConfirmOrder from "./components/cart/ConfirmOrder";
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -15,6 +16,7 @@ import "./styles/Footer.scss";
 import "./styles/contact.scss";
 import "./styles/cart.scss";
 import "./styles/shipping.scss";
+import "./styles/ConfirmOrder.scss";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
 
         <Route path="/shipping" element={<Shipping />} />
+        <Route path="/confirmorder" element={<ConfirmOrder />} />
       </Routes>
 
       <Footer />
